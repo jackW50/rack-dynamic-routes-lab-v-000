@@ -5,4 +5,4 @@ class Application
     req = Rack::Request.new(env) 
     
     if req.path.match(/items/)
-      item_name = 
+      item_name = req.path.split("/")
