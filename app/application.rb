@@ -17,6 +17,6 @@ class Application
           resp.write "item not found"
       else 
         @code_status = 404 
-        resp.write "Route not found."
+        resp.write "Route not found"
       
     elsif 
