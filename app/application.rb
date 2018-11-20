@@ -10,3 +10,4 @@ class Application
       item_name = req.path.split("/items/").last 
       item = @@item.detect {|i| i.name = item_name}
       resp.write item.price
+    elsif 
