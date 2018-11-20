@@ -13,8 +13,8 @@ class Application
           @code_status = 200
           resp.write item.price
         else 
-          @code_status = 400
           resp.write "Item not found"
+          resp.status = 400
       else 
         @code_status = 404 
         resp.write "Route not found"
