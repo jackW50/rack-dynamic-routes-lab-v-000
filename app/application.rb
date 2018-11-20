@@ -12,6 +12,7 @@ class Application
         if item != nil 
           resp.write item.price
         else 
-          
+          @code_status = 400
+          resp.write "item not found"
       elsif 
     elsif 
