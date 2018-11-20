@@ -15,5 +15,8 @@ class Application
         else 
           @code_status = 400
           resp.write "item not found"
-      elsif 
+      else 
+        @code_status = 404 
+        resp.write ""
+      
     elsif 
